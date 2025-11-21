@@ -38,7 +38,7 @@ export default function LinksSection() {
                 key={link.label}
                 href={link.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-[#3b82f6] px-4 py-2 text-white transition hover:bg-[#3b82f6] hover:text-[#0f0f0f]"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}

@@ -42,7 +42,7 @@ export const contactContent = {
 };
 
 export const socialLinks = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/cesarrestrepo' },
-  { label: 'GitHub', href: 'https://github.com/showtunez' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
+  { label: 'GitHub', href: 'https://github.com/Restt015/Jflowg.git' },
   { label: 'CV', href: '/CV2025.pdf' },
 ];

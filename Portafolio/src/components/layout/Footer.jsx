@@ -28,7 +28,12 @@ export default function Footer() {
           <ul className="mt-3 space-y-2">
             {socialLinks.map((link) => (
               <li key={link.label}>
-                <a href={link.href} className="transition hover:text-[#3b82f6]" target="_blank" rel="noreferrer">
+                <a
+                  href={link.href}
+                  className="transition hover:text-[#3b82f6]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   {link.label}
                 </a>
               </li>
@@ -42,7 +47,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               className="inline-flex items-center gap-2 rounded-full border border-[#3b82f6] px-4 py-2 text-white transition hover:bg-[#3b82f6] hover:text-[#0f0f0f]"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               LinkedIn
             </a>
@@ -50,7 +55,7 @@ export default function Footer() {
               href="https://github.com/Restt015/Jflowg.git"
               className="inline-flex items-center gap-2 rounded-full border border-[#3b82f6] px-4 py-2 text-white transition hover:bg-[#3b82f6] hover:text-[#0f0f0f]"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               GitHub
             </a>

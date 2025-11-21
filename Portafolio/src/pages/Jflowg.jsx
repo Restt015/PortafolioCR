@@ -5,7 +5,7 @@ import Footer from '../components/layout/Footer';
 import img1 from '../assets/jflowg-1-home.jpg';
 import img2 from '../assets/jflowg-2-catalogo.jpg';
 import img3 from '../assets/jflowg-3-login.jpg';
-import img4 from '../assets/register.jpg'
+import img4 from '../assets/register.jpg';
 import img5 from '../assets/jflowg-4-carrito.jpg';
 import img6 from '../assets/jflowg-5-payment.jpg';
 import img7 from '../assets/jflowg-6-dashboard.jpg';
@@ -37,7 +37,7 @@ export default function JflowgPage() {
               Proyecto Destacado: JFLOWG
             </motion.h1>
             <motion.p variants={fadeUp} className="max-w-3xl text-lg text-[#d4d4d4]">
-              Ecommerce integral diseñado para gestionar catalogo, operaciones y administracion en un mismo flujo. Combina
+              Ecommerce integral disenado para gestionar catalogo, operaciones y administracion en un mismo flujo. Combina
               una experiencia de compra fluida con herramientas para el equipo interno.
             </motion.p>
             <motion.div variants={fadeUp} className="flex flex-wrap gap-3 text-sm font-semibold">
@@ -46,7 +46,7 @@ export default function JflowgPage() {
                 whileTap={{ scale: 0.97 }}
                 href="https://github.com/Restt015/Jflowg.git"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#3b82f6] px-5 py-3 text-white transition hover:bg-[#2563eb]"
               >
                 Ver repositorio en GitHub
@@ -56,7 +56,7 @@ export default function JflowgPage() {
                 whileTap={{ scale: 0.97 }}
                 href="https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-[#3b82f6] px-5 py-3 text-[#3b82f6] transition hover:bg-[#0f0f0f]"
               >
                 Mi LinkedIn
@@ -88,9 +88,7 @@ export default function JflowgPage() {
           </motion.div>
           <motion.div variants={fadeUp} className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Tecnologias</h3>
-            <p className="text-[#d4d4d4]">
-              React, Tailwind, Node.js, Fastify, MongoDB, Axios, Context API.
-            </p>
+            <p className="text-[#d4d4d4]">React, Tailwind, Node.js, Fastify, MongoDB, Axios, Context API.</p>
             <h3 className="text-lg font-semibold text-white">Roles</h3>
             <p className="text-[#d4d4d4]">
               Frontend, backend, integraciones, diseno UI/UX y orquestacion de la experiencia de compra.
@@ -157,9 +155,9 @@ export default function JflowgPage() {
               <motion.a
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                href="https://github.com/showtunez"
+                href="https://github.com/Restt015/Jflowg.git"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-[#3b82f6] px-4 py-2 text-white transition hover:bg-[#2563eb]"
               >
                 GitHub
@@ -168,7 +166,9 @@ export default function JflowgPage() {
               <motion.a
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                href="#"
+                href="https://github.com/Restt015/Jflowg.git"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-[#3b82f6] px-4 py-2 text-[#3b82f6] transition hover:bg-[#0f0f0f]"
               >
                 Repo
