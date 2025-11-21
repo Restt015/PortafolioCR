@@ -5,10 +5,9 @@ import Footer from '../components/layout/Footer';
 import Hero from '../sections/Hero';
 import About from '../sections/About';
 import Experience from '../sections/Experience';
-import CaseStudy from '../sections/CaseStudy';
-import ProjectsShowcase from '../sections/Projects';
-import GithubSection from '../sections/Github';
 import Contact from '../sections/Contact';
+import ProjectsShowcase from '../sections/Projects';
+import LinksSection from '../sections/Links';
 
 const mainVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -23,13 +22,12 @@ export default function Home() {
   return (
     <Layout>
       <Header />
-      <motion.main initial="hidden" animate="visible" variants={mainVariants} className="space-y-10">
+      <motion.main initial="hidden" animate="visible" variants={mainVariants} className="space-y-8">
         <Hero />
         <About />
         <Experience />
-        <CaseStudy />
         <ProjectsShowcase />
-        <GithubSection />
+        <LinksSection />
         <Contact />
       </motion.main>
       <Footer />

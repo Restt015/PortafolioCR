@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const githubUser = 'showtunez';
+const githubUser = 'Restt015';
 
 export default function GithubSection() {
   return (

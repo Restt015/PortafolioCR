@@ -1,20 +1,20 @@
 export const heroContent = {
   name: 'Cesar Julio Restrepo Gomez',
   role: 'Analista de Pruebas & Desarrollador Junior',
-  punchline: 'QA que combina validaciones manuales, automatizadas y bases solidas de desarrollo.',
+  punchline: 'QA con foco en producto y entregas listas',
   description:
-    'Profesional en formacion de Desarrollo de Software con experiencia validando APIs, flujos web y cargas criticas para aerolineas y banca digital.',
+    'Validacion de APIs, flujos web y performance para ecommerce y banca, entregando calidad con ritmo.',
   primaryAction: {
-    label: 'Descargar CV',
-    href: '/CV2025.pdf',
+    label: 'GitHub',
+    href: 'https://github.com/showtunez',
   },
   secondaryAction: {
-    label: 'Ver ecommerce',
-    href: '#case-study',
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/cesarrestrepo',
   },
   spotlight: [
-    'Pruebas manuales y automatizadas para servicios NDC en Copa Airlines.',
-    'Escenarios de carga y estres para banca digital con Apache JMeter.',
+    'Pruebas manuales y automatizadas para reservas NDC.',
+    'Escenarios de carga para banca digital con JMeter.',
     'Fortaleciendo frontend con React/Vue y consumo de APIs REST.',
   ],
   metrics: [

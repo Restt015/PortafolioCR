@@ -4,7 +4,7 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import SectionHeading from '../components/ui/SectionHeading';
 import ProjectCard from '../components/ui/ProjectCard';
-import { projects } from '../data/projects';
+import imgPreview from '../assets/jflowg-1-home.jpg';
 
 const containerVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -19,22 +19,33 @@ export default function ProjectsPage() {
   return (
     <Layout>
       <Header />
-      <motion.main initial="hidden" animate="visible" variants={containerVariants} className="space-y-10">
+      <motion.main initial="hidden" animate="visible" variants={containerVariants} className="space-y-8">
         <motion.section
           variants={containerVariants}
-          className="rounded-[32px] border border-softGray bg-gradient-to-br from-softBlue/30 via-white to-softGray/50 p-10 shadow-xl"
+          className="rounded-[24px] border border-[#1f1f1f] bg-[#111111] p-7 shadow-xl"
         >
           <SectionHeading
-            eyebrow="Galeria"
-            title="Proyectos en profundidad"
-            subtitle="Explora casos completos con detalles tecnicos, capturas y repositorios listos para revisar."
+            eyebrow="Proyectos Destacados"
+            title="Explora mis ultimos proyectos"
+            subtitle="Preview rapida del proyecto JFLOWG."
             align="center"
           />
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} layout="gallery" />
-            ))}
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <motion.div variants={containerVariants}>
+              <ProjectCard
+                project={{
+                  id: 'jflowg',
+                  title: 'JFLOWG – Ecommerce y Panel Administrativo',
+                  description: 'Tienda completa con gestion de productos, pedidos, usuarios y dashboard administrativo.',
+                  cover: imgPreview,
+                  technologies: ['React', 'Tailwind', 'Fastify', 'MongoDB'],
+                  repoUrl: null,
+                }}
+                layout="gallery"
+                ctaTo="/projects/jflowg"
+              />
+            </motion.div>
           </div>
         </motion.section>
       </motion.main>

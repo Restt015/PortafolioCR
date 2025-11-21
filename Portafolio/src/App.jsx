@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import ProjectsPage from './pages/Projects';
+import JflowgPage from './pages/Jflowg';
 import ProjectDetail from './pages/ProjectDetail';
 
 const router = createBrowserRouter([
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: '/projects',
     element: <ProjectsPage />,
+  },
+  {
+    path: '/projects/jflowg',
+    element: <JflowgPage />,
   },
   {
     path: '/projects/:projectId',

@@ -13,7 +13,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="py-16"
+      className="py-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -21,16 +21,16 @@ export default function About() {
     >
       <motion.div
         variants={sectionVariants}
-        className="rounded-[32px] border border-softGray bg-white/90 p-10 shadow-sm"
+        className="rounded-[24px] border border-[#1f1f1f] bg-[#111111] p-7 shadow-sm"
       >
         <SectionHeading eyebrow="Contexto" title={aboutContent.title} subtitle={aboutContent.description} />
 
-        <div className="mt-10 grid gap-10 md:grid-cols-2">
-          <div className="space-y-4">
-            {aboutContent.highlights.map((item) => (
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <div className="space-y-3">
+            {aboutContent.highlights.slice(0, 2).map((item) => (
               <motion.div
                 key={item}
-                className="rounded-2xl border border-softBlue bg-softBlue/30 p-4 text-sm text-slate-700"
+                className="rounded-2xl border border-[#3b82f6]/40 bg-[#0f0f0f] p-4 text-sm text-[#d4d4d4]"
                 whileHover={{ scale: 1.02 }}
               >
                 {item}
@@ -38,10 +38,10 @@ export default function About() {
             ))}
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-5">
             {skills.map((group) => (
               <motion.div key={group.title} variants={sectionVariants}>
-                <p className="text-xs uppercase tracking-[0.3em] text-slate-500">{group.title}</p>
+                <p className="text-xs uppercase tracking-[0.3em] text-[#d4d4d4]">{group.title}</p>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {group.items.map((skill) => (
                     <Tag key={skill}>{skill}</Tag>
