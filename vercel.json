@@ -1,8 +1,6 @@
 {
   "version": 2,
   "framework": "vite",
-  "rootDirectory": "Portafolio",
-  "installCommand": "npm install",
   "buildCommand": "npm run build",
   "outputDirectory": "dist"
 }
