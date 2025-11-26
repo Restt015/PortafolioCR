@@ -10,7 +10,7 @@ export const heroContent = {
   },
   secondaryAction: {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/cesarrestrepo',
+    href: 'https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
   },
   spotlight: [
     'Pruebas manuales y automatizadas para reservas NDC.',
