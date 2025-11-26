@@ -17,7 +17,7 @@ export const projects = [
       'Validaciones REST/SOAP y reportes accionables para equipos de backend y producto.',
     ],
     stack: ['Postman', 'Newman', 'JavaScript', 'REST/SOAP'],
-    repoUrl: 'https://github.com/showtunez',
+    repoUrl: 'https://github.com/Restt015/Jflowg.git',
   },
   {
     id: 'banesco-load-lab',

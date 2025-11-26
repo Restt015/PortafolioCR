@@ -2,7 +2,7 @@ export const experience = [
   {
     company: 'Copa Airlines - Proyecto Indirect Channel NDC',
     role: 'Asistente de Analista de Pruebas (QA) - Backend & Frontend',
-    period: 'Septiembre 2024 - Actualidad - Remoto',
+    period: 'Septiembre 2024 - Actualidad - Hibrido',
     summary:
       'Ejecuto pruebas manuales y automatizadas sobre servicios NDC, asegurando reservas, asignaciones de asiento, pagos, reembolsos y cambios de itinerario.',
     results: [
@@ -23,7 +23,7 @@ export const experience = [
   {
     company: 'InfosGroup',
     role: 'Practicante Profesional PFP - Asistente de Analista de Pruebas',
-    period: 'Marzo 2024 - Actualidad - Hibrido',
+    period: 'Marzo 2024 - Hibrido',
     summary:
       'Participacion en rotaciones de QA apoyando automatizaciones, validaciones funcionales y releases internos.',
     results: [

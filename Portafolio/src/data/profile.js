@@ -6,7 +6,7 @@ export const heroContent = {
     'Validacion de APIs, flujos web y performance para ecommerce y banca, entregando calidad con ritmo.',
   primaryAction: {
     label: 'GitHub',
-    href: 'https://github.com/showtunez',
+    href: 'https://github.com/Restt015/Jflowg.git',
   },
   secondaryAction: {
     label: 'LinkedIn',
@@ -38,7 +38,7 @@ export const contactContent = {
   email: 'showtunez@hotmail.com',
   phone: '+507 68770881',
   location: 'Ciudad de Panama, Panama',
-  availability: 'Disponible para roles QA o desarrollo (remoto, hibrido o presencial).',
+  availability: 'QA y desarrollador de Software Frontend y Backend Jr',
 };
 
 export const socialLinks = [
