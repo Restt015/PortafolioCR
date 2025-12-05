@@ -1,7 +1,7 @@
 export const experience = [
   {
     company: 'Copa Airlines - Proyecto Indirect Channel NDC',
-    role: 'Asistente de Analista de Pruebas (QA) - Backend & Frontend',
+    role: 'Analista de Pruebas (QA) - Backend & Frontend',
     period: 'Septiembre 2024 - Actualidad - Hibrido',
     summary:
       'Ejecuto pruebas manuales y automatizadas sobre servicios NDC, asegurando reservas, asignaciones de asiento, pagos, reembolsos y cambios de itinerario.',

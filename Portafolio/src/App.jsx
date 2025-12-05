@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import ProjectsPage from './pages/Projects';
 import JflowgPage from './pages/Jflowg';
+import AlarmberPage from './pages/Alarmber';
 import ProjectDetail from './pages/ProjectDetail';
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: '/projects/jflowg',
     element: <JflowgPage />,
+  },
+  {
+    path: '/projects/alarmber',
+    element: <AlarmberPage />,
   },
   {
     path: '/projects/:projectId',
