@@ -13,7 +13,7 @@ export default function Experience() {
   return (
     <motion.section
       id="experience"
-      className="py-10"
+      className="py-12 sm:py-16"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -21,24 +21,24 @@ export default function Experience() {
     >
       <motion.div
         variants={sectionVariants}
-        className="rounded-[24px] border border-[#1f1f1f] bg-[#111111] p-7 shadow-sm"
+        className="rounded-[32px] border border-[#1f1f1f] bg-[#111111] p-8 shadow-lg sm:p-10 lg:p-12"
       >
         <SectionHeading
           eyebrow="Experiencia"
           title="Trayectoria y stack"
           subtitle="QA y desarrollo con foco en productos digitales."
         />
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item) => (
             <motion.div
               key={`${item.company}-${item.period}`}
-              className="rounded-2xl border border-[#1f1f1f] bg-[#0f0f0f] p-4 text-sm text-[#d4d4d4]"
-              whileHover={{ y: -4 }}
+              className="group rounded-2xl border border-[#1f1f1f] bg-[#0f0f0f] p-6 text-sm text-[#d4d4d4] shadow-sm transition-all duration-300 hover:scale-[1.03] hover:border-[#3b82f6]/50 hover:bg-[#111111] hover:shadow-[0_10px_40px_rgba(59,130,246,0.2)]"
+              whileHover={{ y: -6 }}
             >
-              <p className="text-xs uppercase tracking-[0.2em] text-[#d4d4d4]">{item.period}</p>
-              <p className="mt-1 text-base font-semibold text-white">{item.role}</p>
-              <p className="text-xs text-[#d4d4d4]">{item.company}</p>
-              <p className="mt-2 line-clamp-3">{item.summary}</p>
+              <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#3b82f6]/70">{item.period}</p>
+              <p className="mt-2 text-lg font-bold text-white">{item.role}</p>
+              <p className="mt-1 text-sm text-[#d4d4d4]">{item.company}</p>
+              <p className="mt-4 line-clamp-3 leading-relaxed">{item.summary}</p>
             </motion.div>
           ))}
         </div>

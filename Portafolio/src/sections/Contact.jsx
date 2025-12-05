@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <motion.section
       id="contact"
-      className="py-10"
+      className="py-12 sm:py-16"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -26,7 +26,7 @@ export default function Contact() {
     >
       <motion.div
         variants={sectionVariants}
-        className="rounded-[24px] border border-[#1f1f1f] bg-[#111111] p-7 shadow-sm"
+        className="rounded-[32px] border border-[#1f1f1f] bg-[#111111] p-8 shadow-lg sm:p-10 lg:p-12"
       >
         <SectionHeading
           eyebrow="Contacto"
@@ -35,17 +35,17 @@ export default function Contact() {
           align="center"
         />
 
-        <div className="mt-6 grid gap-3 md:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:grid-cols-3">
           {contactItems.slice(0, 2).map((item) => (
             <ContactCard key={item.title} {...item} />
           ))}
           <ContactCard title="Perfil" value="LinkedIn" href={socialLinks.find((l) => l.label === 'LinkedIn')?.href} />
         </div>
 
-        <motion.div variants={sectionVariants} className="mt-6 flex flex-wrap justify-center gap-3 text-sm font-semibold">
+        <motion.div variants={sectionVariants} className="mt-8 flex flex-wrap justify-center gap-4 text-sm font-semibold">
           <motion.a
             href="https://github.com/showtunez"
-            className="rounded-full bg-[#3b82f6] px-4 py-2 text-white transition hover:bg-[#2563eb]"
+            className="rounded-full bg-[#3b82f6] px-6 py-3.5 text-base text-white shadow-lg shadow-[#3b82f6]/30 transition-all hover:bg-[#2563eb] hover:shadow-xl hover:shadow-[#3b82f6]/40"
             target="_blank"
             rel="noreferrer"
             whileHover={{ scale: 1.03 }}
@@ -55,7 +55,7 @@ export default function Contact() {
           </motion.a>
           <motion.a
             href={`mailto:${contactContent.email}`}
-            className="rounded-full border border-[#3b82f6] px-4 py-2 text-[#3b82f6] transition hover:bg-[#0f0f0f]"
+            className="rounded-full border-2 border-[#3b82f6] px-6 py-3.5 text-base text-[#3b82f6] transition-all hover:bg-[#3b82f6]/10"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
           >

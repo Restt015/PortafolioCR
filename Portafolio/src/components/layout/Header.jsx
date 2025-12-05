@@ -16,22 +16,22 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-4 z-50 rounded-3xl border border-[#1f1f1f] bg-[#0f0f0f]/90 p-4 shadow-[0_10px_40px_rgba(0,0,0,0.4)] backdrop-blur">
+    <header className="sticky top-4 z-50 rounded-3xl border border-[#1f1f1f] bg-[#0f0f0f]/95 p-4 shadow-[0_15px_60px_rgba(0,0,0,0.6)] backdrop-blur-md transition-shadow duration-300 hover:shadow-[0_20px_80px_rgba(59,130,246,0.15)]">
       <div className="flex items-center justify-between gap-4 md:gap-8">
         <div className="flex items-center gap-3">
-          <Link to="/" className="text-lg font-semibold tracking-tight text-white">
+          <Link to="/" className="text-xl font-bold tracking-tight text-white transition-colors hover:text-[#3b82f6]">
             CR<span className="text-[#3b82f6]">.</span>
           </Link>
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-full border border-[#3b82f6] px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-[#3b82f6] hover:text-[#0f0f0f] md:hidden"
+            className="inline-flex items-center justify-center rounded-full border-2 border-[#3b82f6] px-4 py-2.5 text-xs font-bold uppercase tracking-[0.25em] text-white transition-all hover:scale-105 hover:bg-[#3b82f6] hover:text-[#0f0f0f] hover:shadow-lg hover:shadow-[#3b82f6]/40 md:hidden"
             onClick={() => setOpen((prev) => !prev)}
           >
             Menu
           </button>
         </div>
         <nav className="hidden flex-1 md:block">
-          <ul className="flex flex-wrap items-center justify-end gap-3 text-sm font-medium text-[#d4d4d4]">
+          <ul className="flex flex-wrap items-center justify-end gap-4 text-sm font-semibold text-[#d4d4d4]">
             {navigationItems.map((item) => (
               <li key={item.id}>
                 {item.id === 'projects' ? (
@@ -44,7 +44,7 @@ export default function Header() {
                 ) : (
                   <a
                     href={`/#${item.id}`}
-                    className="inline-flex rounded-full px-3 py-1 transition hover:text-[#3b82f6] hover:bg-[#111111]"
+                    className="inline-flex rounded-full px-3.5 py-2 transition-all hover:scale-105 hover:text-[#3b82f6] hover:bg-[#111111]"
                   >
                     {item.label}
                   </a>
@@ -56,7 +56,7 @@ export default function Header() {
                 href="https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-[#3b82f6] px-3 py-1 text-white transition hover:bg-[#3b82f6] hover:text-[#0f0f0f]"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-[#3b82f6] px-4 py-2 text-white transition-all hover:scale-105 hover:bg-[#3b82f6] hover:text-[#0f0f0f] hover:shadow-lg hover:shadow-[#3b82f6]/40"
               >
                 LinkedIn
               </a>
@@ -64,7 +64,7 @@ export default function Header() {
             <li>
               <Link
                 to="/projects"
-                className="inline-flex items-center rounded-full border border-[#d4d4d4] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:border-[#3b82f6] hover:text-[#3b82f6]"
+                className="inline-flex items-center rounded-full border-2 border-[#d4d4d4] px-5 py-2.5 text-xs font-bold uppercase tracking-[0.25em] text-white transition-all hover:scale-105 hover:border-[#3b82f6] hover:text-[#3b82f6] hover:shadow-lg hover:shadow-[#3b82f6]/30"
               >
                 Proyectos
               </Link>

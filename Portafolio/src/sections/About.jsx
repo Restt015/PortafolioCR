@@ -13,7 +13,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="py-10"
+      className="py-12 sm:py-16"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -21,28 +21,28 @@ export default function About() {
     >
       <motion.div
         variants={sectionVariants}
-        className="rounded-[24px] border border-[#1f1f1f] bg-[#111111] p-7 shadow-sm"
+        className="rounded-[32px] border border-[#1f1f1f] bg-[#111111] p-8 shadow-lg sm:p-10 lg:p-12"
       >
         <SectionHeading eyebrow="Contexto" title={aboutContent.title} subtitle={aboutContent.description} />
 
-        <div className="mt-6 grid gap-6 md:grid-cols-2">
-          <div className="space-y-3">
+        <div className="mt-10 grid gap-8 lg:grid-cols-2">
+          <div className="space-y-4">
             {aboutContent.highlights.slice(0, 2).map((item) => (
               <motion.div
                 key={item}
-                className="rounded-2xl border border-[#3b82f6]/40 bg-[#0f0f0f] p-4 text-sm text-[#d4d4d4]"
-                whileHover={{ scale: 1.02 }}
+                className="rounded-2xl border border-[#3b82f6]/30 bg-[#0f0f0f] p-6 text-base leading-relaxed text-[#d4d4d4] shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-[#3b82f6]/50 hover:bg-[#111111] hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)]"
+                whileHover={{ y: -2 }}
               >
                 {item}
               </motion.div>
             ))}
           </div>
 
-          <div className="space-y-5">
+          <div className="space-y-6">
             {skills.map((group) => (
               <motion.div key={group.title} variants={sectionVariants}>
-                <p className="text-xs uppercase tracking-[0.3em] text-[#d4d4d4]">{group.title}</p>
-                <div className="mt-3 flex flex-wrap gap-2">
+                <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#3b82f6]/80">{group.title}</p>
+                <div className="mt-4 flex flex-wrap gap-2">
                   {group.items.map((skill) => (
                     <Tag key={skill}>{skill}</Tag>
                   ))}
