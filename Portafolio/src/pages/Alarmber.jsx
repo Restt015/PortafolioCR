@@ -2,20 +2,21 @@ import { motion } from 'framer-motion';
 import Layout from '../components/layout/Layout';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
-import img1 from '../assets/jflowg-1-home.jpg';
-import img2 from '../assets/jflowg-2-catalogo.jpg';
-import img3 from '../assets/jflowg-3-login.jpg';
-import img4 from '../assets/register.jpg';
-import img5 from '../assets/jflowg-4-carrito.jpg';
-import img6 from '../assets/jflowg-5-payment.jpg';
-import img7 from '../assets/jflowg-6-dashboard.jpg';
+import img1 from '../assets/IMG_3924.png';
+import img2 from '../assets/IMG_3925.png';
+import img3 from '../assets/IMG_3926.png';
+import img4 from '../assets/IMG_3927.png';
+import img5 from '../assets/IMG_3928.png';
+import img6 from '../assets/IMG_3929.png';
+import img7 from '../assets/IMG_3930.png';
+import img8 from '../assets/IMG_3931.png';
 
 const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } },
 };
 
-const gallery = [img1, img2, img3, img4, img5, img6, img7];
+const gallery = [img1, img2, img3, img4, img5, img8, img7, img6];
 
 export default function AlarmberPage() {
     return (

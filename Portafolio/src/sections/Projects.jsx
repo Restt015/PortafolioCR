@@ -23,9 +23,9 @@ export default function ProjectsShowcase() {
         className="rounded-[24px] border border-[#1f1f1f] bg-[#111111] p-7 shadow-sm"
       >
         <SectionHeading
-          eyebrow="Proyectos"
-          title="Proyecto destacado"
-          subtitle="Preview rapido de JFLOWG."
+          eyebrow="Proyectos Destacados"
+          title=" Mis Proyectos"
+          
         />
 
         <motion.div
