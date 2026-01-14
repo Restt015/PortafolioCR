@@ -1,48 +1,53 @@
 export const heroContent = {
   name: 'Cesar Julio Restrepo Gomez',
-  role: 'Analista de Pruebas & Desarrollador Junior',
-  punchline: 'QA con foco en producto y entregas listas',
+  role: 'QA Engineer & Desarrollador en Formación',
+  punchline: 'Validación de software y desarrollo como crecimiento técnico',
   description:
-    'Validacion de APIs, flujos web y performance para ecommerce y banca, entregando calidad con ritmo.',
+    'Especializado en pruebas manuales, automatizadas y de rendimiento. Ampliando conocimientos en desarrollo web y móvil con proyectos prácticos.',
   primaryAction: {
     label: 'GitHub',
     href: 'https://github.com/Restt015',
   },
   secondaryAction: {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+    href: 'https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3',
   },
   spotlight: [
-    'Pruebas manuales y automatizadas para reservas NDC.',
-    'Escenarios de carga para banca digital con JMeter.',
-    'Fortaleciendo frontend con React/Vue y consumo de APIs REST.',
+    'QA para servicios NDC en Copa Airlines (reservas, pagos, cambios).',
+    'Pruebas de performance en Banesco Panamá con Apache JMeter.',
+    'Desarrollo de proyectos prácticos con React Native y Expo.',
   ],
   metrics: [
-    { label: 'Experiencia QA', value: '1+ anos' },
-    { label: 'Ubicacion', value: 'Panama' },
+    { label: 'Experiencia QA', value: '1+ año' },
+    { label: 'Proyectos', value: '2 apps' },
+    { label: 'Ubicación', value: 'Panamá' },
   ],
 };
 
 export const aboutContent = {
-  title: 'Perfil QA orientado a resultados medibles',
+  title: 'QA Engineer con enfoque en resultados medibles',
   highlights: [
-    'Coprotagonista en la suite NDC de Copa Airlines validando reservas, pagos y cambios.',
-    'QA Tester para Banesco Panama con enfasis en performance bajo alta concurrencia.',
-    'Carrera de Desarrollo de Software en la Universidad Tecnologica de Panama (2021 - actualidad).',
+    'Validación de servicios NDC para Copa Airlines: reservas, pagos y cambios.',
+    'Pruebas de rendimiento para Banesco Panamá bajo alta concurrencia.',
+    'ALARMBER: app móvil con React Native, Expo y geolocalización para reportes ciudadanos.',
+    'JFLOWG: ecommerce full-stack con React, Tailwind, Fastify y MongoDB.',
+    'Estudiante de Desarrollo de Software en la Universidad Tecnológica de Panamá.',
   ],
   description:
-    'Me adapto con rapidez a nuevas herramientas, colaboro de cerca con equipos de producto y mantengo el foco en la mejora continua para elevar la calidad en cada release.',
+    'Me especializo en garantizar la calidad del software a través de pruebas rigurosas. Como parte de mi crecimiento técnico, desarrollo proyectos web y móviles que me permiten entender mejor el ciclo completo del producto.',
 };
 
 export const contactContent = {
   email: 'showtunez@hotmail.com',
   phone: '+507 68770881',
-  location: 'Ciudad de Panama, Panama',
-  availability: 'QA y desarrollador de Software Frontend y Backend Jr',
+  location: 'Ciudad de Panamá, Panamá',
+  availability: 'QA Engineer – Abierto a nuevas oportunidades',
 };
 
 export const socialLinks = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3' },
   { label: 'GitHub', href: 'https://github.com/Restt015' },
   { label: 'CV', href: '/CV2025.pdf' },
 ];
+
+

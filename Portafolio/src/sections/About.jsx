@@ -27,7 +27,7 @@ export default function About() {
 
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
           <div className="space-y-4">
-            {aboutContent.highlights.slice(0, 2).map((item) => (
+            {aboutContent.highlights.slice(0, 4).map((item) => (
               <motion.div
                 key={item}
                 className="rounded-2xl border border-[#3b82f6]/30 bg-[#0f0f0f] p-6 text-base leading-relaxed text-[#d4d4d4] shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-[#3b82f6]/50 hover:bg-[#111111] hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)]"

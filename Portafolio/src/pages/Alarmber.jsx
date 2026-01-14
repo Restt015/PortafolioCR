@@ -29,13 +29,13 @@ export default function AlarmberPage() {
                 >
                     <div className="space-y-4">
                         <motion.p variants={fadeUp} className="text-sm font-semibold uppercase tracking-[0.3em] text-[#d4d4d4]">
-                            Proyecto destacado
+                            Proyecto de desarrollo
                         </motion.p>
                         <motion.h1 variants={fadeUp} className="text-4xl font-semibold text-white sm:text-5xl">
-                            Proyecto Destacado: ALARMBER
+                            ALARMBER – Proyecto práctico
                         </motion.h1>
                         <motion.p variants={fadeUp} className="max-w-3xl text-lg text-[#d4d4d4]">
-                            Aplicación móvil intuitiva para crear, visualizar y gestionar reportes de personas desaparecidas. Diseñada con interfaz estilo Uber, validación de reportes y navegación fluida.
+                            Aplicación móvil desarrollada como proyecto de aprendizaje, enfocada en reportes y alertas ciudadanas. Construida para ampliar conocimientos en React Native, Expo y arquitectura de apps móviles.
                         </motion.p>
                         <motion.div variants={fadeUp} className="flex flex-wrap gap-3 text-sm font-semibold">
                             <motion.a
@@ -67,9 +67,9 @@ export default function AlarmberPage() {
                     className="mt-8 grid gap-6 rounded-[28px] border border-[#1f1f1f] bg-[#111111] p-8 shadow-lg md:grid-cols-2"
                 >
                     <motion.div variants={fadeUp} className="space-y-4">
-                        <h2 className="text-2xl font-semibold text-white">Qué es ALARMBER</h2>
+                        <h2 className="text-2xl font-semibold text-white">Sobre el proyecto</h2>
                         <p className="text-[#d4d4d4]">
-                            ALARMBER es una aplicación móvil enfocada en reportes de personas desaparecidas. Permite crear reportes con fotos, descripciones, ubicaciones, vestimenta, y validación por administradores. Incluye navegación estilo Uber y diseño minimalista para facilitar su uso por cualquier ciudadano.
+                            ALARMBER es un proyecto práctico de desarrollo móvil enfocado en reportes ciudadanos. Desarrollado para aprender arquitectura de apps, manejo de estados, navegación y consumo de APIs. Incluye funcionalidades como creación de reportes con fotos, geolocalización y validación.
                         </p>
                         <div className="space-y-2">
                             <h3 className="text-lg font-semibold text-white">Funcionalidad</h3>
@@ -88,13 +88,13 @@ export default function AlarmberPage() {
                     <motion.div variants={fadeUp} className="space-y-4">
                         <h3 className="text-lg font-semibold text-white">Tecnologías</h3>
                         <p className="text-[#d4d4d4]">React Native, Expo, Expo Router, React Native Paper, NativeWind / Tailwind, Vercel (para la demo web).</p>
-                        <h3 className="text-lg font-semibold text-white">Roles</h3>
+                        <h3 className="text-lg font-semibold text-white">Aprendizajes</h3>
                         <p className="text-[#d4d4d4]">
-                            Diseño UI/UX, desarrollo móvil con React Native, arquitectura de rutas, validación de formularios, lógica de reportes y despliegue web con Vercel.
+                            Diseño UI/UX mobile-first, arquitectura de rutas con Expo Router, validación de formularios, integración de APIs REST y despliegue en Vercel.
                         </p>
-                        <h3 className="text-lg font-semibold text-white">Objetivo</h3>
+                        <h3 className="text-lg font-semibold text-white">Objetivo de aprendizaje</h3>
                         <p className="text-[#d4d4d4]">
-                            Crear una herramienta accesible para que cualquier persona pueda registrar reportes de desaparecidos de forma rápida y validada, ofreciendo una experiencia moderna e intuitiva.
+                            Desarrollar una aplicación completa para practicar arquitectura móvil, buenas prácticas de desarrollo y experiencia de usuario moderna.
                         </p>
                     </motion.div>
                 </motion.section>
