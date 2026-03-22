@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import SectionHeading from '../components/ui/SectionHeading';
+import Tag from '../components/ui/Tag';
 import { experience } from '../data/experience';
 
 const sectionVariants = {
@@ -32,13 +33,21 @@ export default function Experience() {
           {items.map((item) => (
             <motion.div
               key={`${item.company}-${item.period}`}
-              className="group rounded-2xl border border-[#1f1f1f] bg-[#0f0f0f] p-6 text-sm text-[#d4d4d4] shadow-sm transition-all duration-300 hover:scale-[1.03] hover:border-[#3b82f6]/50 hover:bg-[#111111] hover:shadow-[0_10px_40px_rgba(59,130,246,0.2)]"
+              className="flex flex-col group rounded-2xl border border-[#1f1f1f] bg-[#0f0f0f] p-6 text-sm text-[#d4d4d4] shadow-sm transition-all duration-300 hover:scale-[1.03] hover:border-[#3b82f6]/50 hover:bg-[#111111] hover:shadow-[0_10px_40px_rgba(59,130,246,0.2)]"
               whileHover={{ y: -6 }}
             >
               <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#3b82f6]/70">{item.period}</p>
               <p className="mt-2 text-lg font-bold text-white">{item.role}</p>
-              <p className="mt-1 text-sm text-[#d4d4d4]">{item.company}</p>
-              <p className="mt-4 line-clamp-3 leading-relaxed">{item.summary}</p>
+              <p className="mt-1 text-sm text-[#3b82f6]">{item.company}</p>
+              <p className="mt-4 mb-6 leading-relaxed flex-grow">{item.summary}</p>
+              
+              {item.tech && item.tech.length > 0 && (
+                <div className="mt-auto flex flex-wrap gap-2 pt-4 border-t border-[#1f1f1f] group-hover:border-[#3b82f6]/30 transition-colors">
+                  {item.tech.map((t) => (
+                    <Tag key={t}>{t}</Tag>
+                  ))}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>

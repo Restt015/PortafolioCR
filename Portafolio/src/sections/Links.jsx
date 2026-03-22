@@ -5,7 +5,7 @@ const links = [
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
   },
-  { label: 'GitHub JFLOWG', href: 'https://github.com/Restt015/Jflowg.git' },
+  { label: 'GitHub JFLOWG', href: 'https://github.com/Restt015' },
 ];
 
 const sectionVariants = {

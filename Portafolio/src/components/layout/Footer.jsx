@@ -52,7 +52,7 @@ export default function Footer() {
               LinkedIn
             </a>
             <a
-              href="https://github.com/Restt015/Jflowg.git"
+              href="https://github.com/Restt015"
               className="inline-flex items-center gap-2 rounded-full border-2 border-[#3b82f6] px-5 py-2.5 text-white transition-all hover:scale-105 hover:bg-[#3b82f6] hover:text-[#0f0f0f] hover:shadow-lg hover:shadow-[#3b82f6]/40"
               target="_blank"
               rel="noopener noreferrer"

@@ -9,6 +9,7 @@ export const experience = [
       'Automatizacion de regresiones con Postman y Newman para APIs REST/SOAP.',
       'Documentacion y analisis de hallazgos, proponiendo mejoras en scripts y procesos QA.',
     ],
+    tech: ['Postman', 'Newman', 'REST', 'SOAP'],
   },
   {
     company: 'Banesco Panama',
@@ -19,6 +20,7 @@ export const experience = [
       'Ejecucion de escenarios con Apache JMeter simulando usuarios concurrentes y volumenes reales.',
       'Identificacion de cuellos de botella y entrega de reportes tecnicos para equipos de desarrollo.',
     ],
+    tech: ['Apache JMeter', 'Gatling', 'Performance'],
   },
   {
     company: 'InfosGroup',
@@ -30,5 +32,6 @@ export const experience = [
       'Creacion de scripts de verificacion y documentacion de procesos de calidad.',
       'Acompanamiento a desarrolladores para diagnosticar incidencias y mejorar la cobertura de pruebas.',
     ],
+    tech: ['JavaScript', 'Selenium', 'TestComplete'],
   },
 ];
