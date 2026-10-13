@@ -1,0 +1,178 @@
+<!doctype html>
+<!-- Fuente del CV. El PDF publicado está en public/CV-Cesar-Restrepo.pdf (imprimir esta página en tamaño carta). -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cesar Julio Restrepo Gomez · Analista de Pruebas (QA) y Desarrollador de Software Jr</title>
+    <style>
+      @font-face {
+        font-family: 'Instrument Sans';
+        src: url('../node_modules/@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2') format('woff2');
+        font-weight: 400 700;
+      }
+      @font-face {
+        font-family: 'Bricolage Grotesque';
+        src: url('../node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-wght-normal.woff2') format('woff2');
+        font-weight: 400 800;
+      }
+      @page { size: Letter; margin: 11mm 14mm; }
+      * { box-sizing: border-box; }
+      html { font-size: 9pt; }
+      body {
+        margin: 0;
+        font-family: 'Instrument Sans', 'Segoe UI', Arial, sans-serif;
+        color: #1b1f27;
+        line-height: 1.42;
+      }
+      h1, h2, h3 { font-family: 'Bricolage Grotesque', 'Segoe UI', Arial, sans-serif; margin: 0; }
+      h1 { font-size: 23pt; font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; }
+      .role { margin: 3pt 0 0; font-size: 12pt; font-weight: 600; color: #1d4ed8; }
+      .contact { margin: 7pt 0 0; color: #4a5263; }
+      .contact span { white-space: nowrap; }
+      .contact span + span::before { content: '·'; margin: 0 5pt; color: #9aa3b2; }
+      a { color: inherit; text-decoration: none; }
+      h2 {
+        margin: 13pt 0 6pt;
+        padding-bottom: 3pt;
+        border-bottom: 1.2pt solid #1d4ed8;
+        font-size: 11.5pt;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+      p { margin: 0; }
+      .entry { margin-top: 8pt; break-inside: avoid; }
+      .entry:first-of-type { margin-top: 0; }
+      .entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+      h3 { font-size: 10.6pt; font-weight: 600; }
+      h3 span { font-family: 'Instrument Sans', sans-serif; font-weight: 400; color: #4a5263; }
+      .date { flex: none; color: #4a5263; font-variant-numeric: tabular-nums; }
+      ul { margin: 3pt 0 0; padding-left: 12pt; }
+      li { margin-top: 1.5pt; }
+      li::marker { color: #1d4ed8; }
+      .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20pt; }
+      .label { font-weight: 600; }
+      .skills p + p { margin-top: 2.5pt; }
+      .url { color: #1d4ed8; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Cesar Julio Restrepo Gomez</h1>
+      <p class="role">Analista de Pruebas (QA) · Desarrollador de Software Jr</p>
+      <p class="contact">
+        <span>Calle 87 A Este 3139, Panamá, Panamá</span>
+        <span><a href="mailto:showtunez@hotmail.com">showtunez@hotmail.com</a></span>
+        <span><a href="tel:+50768770881">+507 68770881</a></span>
+        <span><a class="url" href="https://portafolio-cr-ad36.vercel.app/">portafolio-cr-ad36.vercel.app</a></span>
+        <span><a class="url" href="https://github.com/Restt015">github.com/Restt015</a></span>
+        <span><a class="url" href="https://www.linkedin.com/in/cesar-restrepo-9ba6b22a3">linkedin.com/in/cesar-restrepo-9ba6b22a3</a></span>
+      </p>
+    </header>
+
+    <h2>Resumen profesional</h2>
+    <p>
+      Analista de Pruebas (QA) con experiencia en pruebas funcionales, de integración y de regresión sobre APIs y
+      sistemas críticos de aerolínea y banca. Diseño casos de prueba a partir de los criterios de aceptación, automatizo
+      regresiones con Postman y Newman, y convierto los resultados en reportes claros para desarrollo y líderes de
+      proyecto. En paralelo estudio Desarrollo de Software y construyo sitios web con React, Next.js y Node.js.
+    </p>
+
+    <h2>Experiencia en QA</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Analista de Pruebas (QA) <span>· Copa Airlines</span></h3>
+        <p class="date">Ene 2024 – Actual</p>
+      </div>
+      <ul>
+        <li>Valido las APIs NDC (v11.6) de Canales Indirectos para reservaciones y emisiones aéreas, con pruebas funcionales y de regresión.</li>
+        <li>Diseño casos de prueba alineados a los criterios de aceptación y ejecuto pruebas de integración en sistemas críticos.</li>
+        <li>Automatizo regresiones con Postman y Newman y genero reportes detallados para los líderes de proyecto.</li>
+        <li>Implementé un proceso de seguimiento de errores que mejora la comunicación entre equipos, deja ver patrones de fallos y reduce los tiempos de corrección en cada entrega.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>QA Tester <span>· Banesco Panamá</span></h3>
+        <p class="date">Ene 2024 – Dic 2024</p>
+      </div>
+      <ul>
+        <li>Diseñé y ejecuté pruebas de carga y estrés con Apache JMeter sobre Banca Persona y Banca Empresa, simulando alta concurrencia para medir tiempos de respuesta.</li>
+        <li>Identifiqué cuellos de botella críticos y elaboré informes técnicos que guiaron las optimizaciones del equipo de desarrollo.</li>
+        <li>Ejecuté pruebas de integración de sistemas financieros para detectar inconsistencias en las transacciones.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Becario de práctica profesional (PFP) <span>· InfosGroup</span></h3>
+        <p class="date">Ene 2024 – Dic 2024</p>
+      </div>
+      <ul>
+        <li>Ejecuté pruebas funcionales y automatizadas sobre flujos críticos para detectar inconsistencias de forma temprana.</li>
+        <li>Apoyé al equipo de desarrollo en mantenimiento básico y validación de módulos, en un entorno de metodologías ágiles.</li>
+        <li>Documenté los procesos bajo estándares definidos y analicé datos financieros para mejorar la precisión de los reportes.</li>
+      </ul>
+    </div>
+
+    <h2>Desarrollo web</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Ink by Rafa <span>· Sitio web para un tatuador · Next.js, React, Vercel</span></h3>
+        <p class="date"><a class="url" href="https://tattorafa-s1xw.vercel.app/">tattorafa-s1xw.vercel.app</a></p>
+      </div>
+      <ul>
+        <li>Galería de 46 piezas con filtro por estilo y reserva de cita en 6 pasos que cierra la fianza por WhatsApp.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Floristería Collette <span>· Tienda en línea · Next.js, React</span></h3>
+        <p class="date"><a class="url" href="http://100.63.55.198/">100.63.55.198</a></p>
+      </div>
+      <ul>
+        <li>Catálogo con más de 20 categorías y filtros, ficha de producto con inventario, carrito y cuentas de cliente con correo o Google.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>JFLOWG <span>· Ecommerce full-stack de práctica · React, Tailwind CSS, Fastify, MongoDB</span></h3>
+        <p class="date"><a class="url" href="https://github.com/Restt015/Jflowg">github.com/Restt015/Jflowg</a></p>
+      </div>
+      <ul>
+        <li>Catálogo con filtros, carrito, pagos, API REST y panel administrativo de productos, pedidos y devoluciones.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <h3>Alarmber <span>· App móvil de práctica · React Native, Expo</span></h3>
+        <p class="date"><a class="url" href="https://github.com/Restt015/alarmber-app">github.com/Restt015/alarmber-app</a></p>
+      </div>
+      <ul>
+        <li>Reporte de personas desaparecidas con foto y ubicación, alertas activas, notificaciones y recursos de emergencia.</li>
+      </ul>
+    </div>
+
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <p><span class="label">Pruebas:</span> funcionales, exploratorias, de integración, de regresión, de carga y estrés; diseño de casos de prueba; automatización de pruebas; reportes de calidad; análisis de requisitos; documentación técnica.</p>
+      <p><span class="label">Herramientas de QA:</span> Postman, Newman, Apache JMeter, Selenium, TestComplete.</p>
+      <p><span class="label">Desarrollo:</span> JavaScript, TypeScript, React, Next.js, Node.js, Tailwind CSS, MySQL, MongoDB, Git.</p>
+    </div>
+
+    <div class="cols">
+      <div>
+        <h2>Educación</h2>
+        <div class="entry-head">
+          <h3>Desarrollo de Software <span>· Universidad Tecnológica de Panamá</span></h3>
+        </div>
+        <p class="date">Abr 2021 – Actual</p>
+        <h2>Idiomas</h2>
+        <p>Inglés B2 (intermedio-avanzado)</p>
+      </div>
+      <div>
+        <h2>Cursos</h2>
+        <p><span class="label">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</span> · Oracle · Sep 2025</p>
+        <p style="margin-top: 4pt"><span class="label">MySQL HeatWave</span> · Oracle · Sep 2025</p>
+      </div>
+    </div>
+  </body>
+</html>

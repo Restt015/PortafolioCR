@@ -1,7 +1,6 @@
 export const navigationItems = [
-  { id: 'hero', label: 'Inicio' },
-  { id: 'about', label: 'Sobre mi' },
-  { id: 'experience', label: 'Experiencia' },
-  { id: 'projects', label: 'Proyectos' },
+  { id: 'qa', label: 'QA' },
+  { id: 'projects', label: 'Desarrollo web' },
+  { id: 'about', label: 'Sobre mí' },
   { id: 'contact', label: 'Contacto' },
 ];

@@ -1,57 +1,53 @@
-import { motion } from 'framer-motion';
-import SectionHeading from '../components/ui/SectionHeading';
-import Tag from '../components/ui/Tag';
 import { aboutContent } from '../data/profile';
-import { skills } from '../data/skills';
-
-const sectionVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } },
-};
+import photo from '../assets/profile.jpeg';
 
 export default function About() {
+  const { paragraphs, skills, education } = aboutContent;
+
   return (
-    <motion.section
-      id="about"
-      className="py-12 sm:py-16"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-      variants={sectionVariants}
-    >
-      <motion.div
-        variants={sectionVariants}
-        className="rounded-[32px] border border-[#1f1f1f] bg-[#111111] p-8 shadow-lg sm:p-10 lg:p-12"
-      >
-        <SectionHeading eyebrow="Contexto" title={aboutContent.title} subtitle={aboutContent.description} />
+    <section id="about" className="border-t border-line py-16 sm:py-24">
+      <h2 className="text-3xl text-white sm:text-4xl">Sobre mí</h2>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          <div className="space-y-4">
-            {aboutContent.highlights.slice(0, 4).map((item) => (
-              <motion.div
-                key={item}
-                className="rounded-2xl border border-[#3b82f6]/30 bg-[#0f0f0f] p-6 text-base leading-relaxed text-[#d4d4d4] shadow-sm transition-all duration-300 hover:scale-[1.02] hover:border-[#3b82f6]/50 hover:bg-[#111111] hover:shadow-[0_10px_40px_rgba(59,130,246,0.15)]"
-                whileHover={{ y: -2 }}
-              >
-                {item}
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="space-y-6">
-            {skills.map((group) => (
-              <motion.div key={group.title} variants={sectionVariants}>
-                <p className="text-xs font-bold uppercase tracking-[0.35em] text-[#3b82f6]/80">{group.title}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {group.items.map((skill) => (
-                    <Tag key={skill}>{skill}</Tag>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
+      <div className="mt-10 flex flex-col gap-8 sm:flex-row sm:items-start">
+        <img
+          src={photo}
+          alt="Retrato de Cesar Restrepo"
+          width={960}
+          height={1280}
+          loading="lazy"
+          className="h-36 w-28 shrink-0 rounded-xl border border-line object-cover object-[50%_30%]"
+        />
+        <div className="max-w-[62ch] space-y-4 text-lg text-text">
+          {paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
-      </motion.div>
-    </motion.section>
+      </div>
+
+      <div className="mt-14 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        {skills.map((group) => (
+          <div key={group.title}>
+            <h3 className="text-lg text-white">{group.title}</h3>
+            <ul className="mt-3 space-y-1.5 text-muted">
+              {group.items.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="mt-14 text-lg text-white">Formación</h3>
+      <ul className="mt-3 divide-y divide-line border-y border-line">
+        {education.map((item) => (
+          <li key={item.title} className="grid gap-x-10 gap-y-1 py-4 md:grid-cols-[13rem_1fr]">
+            <p className="font-mono text-sm whitespace-nowrap text-muted">{item.period}</p>
+            <p className="text-text">
+              {item.title} <span className="text-muted">· {item.place}</span>
+            </p>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

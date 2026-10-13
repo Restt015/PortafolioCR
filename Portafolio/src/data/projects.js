@@ -1,145 +1,174 @@
-// Categorías de proyectos
-export const projectCategories = [
-  { id: 'development', label: 'Desarrollo (Práctica)', icon: '💻' },
-  { id: 'qa', label: 'QA & Testing', icon: '🧪' },
-];
+import ink1 from '../assets/inkbyrafa-1-inicio.jpg';
+import ink2 from '../assets/inkbyrafa-2-artista.jpg';
+import ink3 from '../assets/inkbyrafa-3-servicios.jpg';
+import ink4 from '../assets/inkbyrafa-4-obra.jpg';
+import ink5 from '../assets/inkbyrafa-5-proceso.jpg';
+import ink6 from '../assets/inkbyrafa-6-estilos.jpg';
+import ink7 from '../assets/inkbyrafa-7-reservar.jpg';
+import col1 from '../assets/collette-1-inicio.jpg';
+import col2 from '../assets/collette-2-colecciones.jpg';
+import col3 from '../assets/collette-3-catalogo.jpg';
+import col4 from '../assets/collette-4-producto.jpg';
+import col5 from '../assets/collette-5-carrito.jpg';
+import col6 from '../assets/collette-6-nosotros.jpg';
+import col7 from '../assets/collette-7-contacto.jpg';
+import col8 from '../assets/collette-8-login.jpg';
+import jf1 from '../assets/jflowg-1-home.jpg';
+import jf2 from '../assets/jflowg-2-catalogo.jpg';
+import jf3 from '../assets/jflowg-3-login.jpg';
+import jf4 from '../assets/register.jpg';
+import jf5 from '../assets/jflowg-4-carrito.jpg';
+import jf6 from '../assets/jflowg-5-payment.jpg';
+import jf7 from '../assets/jflowg-6-dashboard.jpg';
+import jf8 from '../assets/jflowg-7-crud.jpg';
+import jf9 from '../assets/crud2.jpg';
+import jf10 from '../assets/devoluciones y ordenes .jpg';
+import al1 from '../assets/alarmber-1.jpg';
+import al2 from '../assets/alarmber-2.jpg';
+import al3 from '../assets/alarmber-3.jpg';
+import al4 from '../assets/alarmber-4.jpg';
+import al5 from '../assets/alarmber-5.jpg';
+import al6 from '../assets/alarmber-6.jpg';
+import al7 from '../assets/alarmber-7.jpg';
+import al8 from '../assets/alarmber-8.jpg';
 
+// format: 'desktop' (captura 1440×900), 'small' (captura ~600 px de ancho) o 'phone' (captura 720×1561)
 export const projects = [
-  // ═══════════════════════════════════════════════════════════════════════════
-  // PROYECTOS DE DESARROLLO (Práctica y aprendizaje)
-  // ═══════════════════════════════════════════════════════════════════════════
   {
-    id: 'alarmber',
-    title: 'ALARMBER',
-    subtitle: 'Proyecto práctico de desarrollo móvil',
+    id: 'ink-by-rafa',
+    title: 'Ink by Rafa',
+    kind: 'Sitio web para un tatuador',
+    practice: false,
     description:
-      'Proyecto práctico enfocado en reportes y alertas ciudadanas, desarrollado para ampliar conocimientos en React Native y Expo.',
-    longDescription:
-      'Aplicación móvil desarrollada como proyecto de aprendizaje. Incluye manejo de reportes con fotos, geolocalización, validación y navegación moderna. Enfocado en arquitectura, buenas prácticas y experiencia técnica.',
-    category: 'development',
-    featured: true,
-    technologies: ['React Native', 'Expo', 'NativeWind', 'Node.js', 'WebSockets'],
-    cover: null, // Se usa imagen local: IMG_3924.png
-    images: [],
-    achievements: [
-      'Diseño UI/UX mobile-first con navegación fluida.',
-      'Sistema de validación de reportes por administrador.',
-      'Chat en tiempo real y notificaciones push.',
-      'Geolocalización de incidentes en mapa interactivo.',
+      'La obra de un tatuador de Ciudad de Panamá ordenada por estilo, y una reserva en 6 pasos que cierra la fianza por WhatsApp.',
+    summary:
+      'Sitio de Rafa, tatuador residente de Inkside en Obarrio, Ciudad de Panamá. Muestra su obra por estilo y lleva al cliente de la idea a la cita sin crear una cuenta.',
+    siteUrl: 'https://tattorafa-s1xw.vercel.app/',
+    siteLabel: 'tattorafa-s1xw.vercel.app',
+    repoUrl: null,
+    stack: ['Next.js', 'React', 'Vercel'],
+    built: [
+      'Portada con carrusel de piezas en perspectiva',
+      'Galería de 46 piezas con filtro por estilo y vista de cerca',
+      'Página de tipos de tatuaje con 10 estilos',
+      'Reserva en 6 pasos: datos, tatuaje, presupuesto, fecha, salud y confirmación',
+      'Cierre de la fianza por WhatsApp con los datos ya escritos',
     ],
-    stack: ['React Native', 'Expo', 'NativeWind', 'Node.js'],
-    repoUrl: 'https://github.com/Restt015/alarmber-app',
-    demoUrl: 'https://alarmber-app-xkri.vercel.app/',
-    detailPath: '/projects/alarmber',
+    format: 'desktop',
+    cover: [ink1],
+    gallery: [
+      { src: ink1, caption: 'Portada: el nombre, las piezas y un solo botón para agendar.' },
+      { src: ink2, caption: 'Sobre mí: quién es Rafa y cuánto lleva tatuando en Panamá.' },
+      { src: ink3, caption: 'Servicios: una fila por estilo.' },
+      { src: ink4, caption: 'Mi obra: las fotos tal como las publica en Instagram.' },
+      { src: ink5, caption: 'Proceso: primero la idea, después la fecha.' },
+      { src: ink6, caption: 'Tipos de tatuaje: la obra ordenada por estilo.' },
+      { src: ink7, caption: 'Reserva: primer paso del formulario, sin cuenta ni contraseña.' },
+    ],
+  },
+  {
+    id: 'floristeria-collette',
+    title: 'Floristería Collette',
+    kind: 'Tienda en línea para una floristería',
+    practice: false,
+    description:
+      'Tienda en línea de una floristería en Panamá: catálogo por ocasión, ficha de producto con inventario, carrito y cuentas de cliente.',
+    summary:
+      'Tienda en línea de una floristería en Panamá. El cliente recorre el catálogo por ocasión, revisa cada arreglo con su precio y disponibilidad, y compra desde el carrito.',
+    siteUrl: 'http://100.63.55.198/',
+    siteLabel: '100.63.55.198',
+    repoUrl: null,
+    stack: ['Next.js', 'React'],
+    built: [
+      'Portada con accesos por ocasión: cumpleaños, amor y aniversario, condolencias',
+      'Catálogo con más de 20 categorías, orden por precio y filtro de disponibilidad',
+      'Ficha de producto con precio, inventario y compra directa',
+      'Carrito y cuentas de cliente con correo o Google',
+      'Contacto con formulario, horarios y acceso directo a WhatsApp',
+    ],
+    format: 'desktop',
+    cover: [col1],
+    gallery: [
+      { src: col1, caption: 'Portada: tres ocasiones para entrar directo al catálogo.' },
+      { src: col2, caption: 'Colecciones: cada categoría con su propia ilustración.' },
+      { src: col3, caption: 'Catálogo: categorías, orden por precio y rangos.' },
+      { src: col4, caption: 'Producto: precio, inventario disponible y compra.' },
+      { src: col5, caption: 'Carrito vacío, con salida hacia los productos.' },
+      { src: col6, caption: 'Nosotros: historia, misión y valores de la floristería.' },
+      { src: col7, caption: 'Contacto: datos, horarios y formulario.' },
+      { src: col8, caption: 'Inicio de sesión con correo o con Google.' },
+    ],
   },
   {
     id: 'jflowg',
     title: 'JFLOWG',
-    subtitle: 'Ecommerce y Panel Administrativo',
+    kind: 'Tienda en línea con panel administrativo',
+    practice: true,
     description:
-      'Tienda online completa con catálogo, filtros, carrito, pagos y dashboard administrativo para gestión de productos y pedidos.',
-    longDescription:
-      'Plataforma ecommerce full-stack con frontend React, backend Fastify/MongoDB. Incluye autenticación, gestión de inventario, procesamiento de pagos y panel de administración.',
-    category: 'development',
-    featured: true,
-    technologies: ['React', 'Tailwind', 'Fastify', 'MongoDB'],
-    cover: null, // Se usa imagen local: jflowg-1-home.jpg
-    images: [],
-    achievements: [
-      'Catálogo con filtros avanzados y búsqueda.',
-      'Sistema de carrito y checkout completo.',
-      'Dashboard administrativo para CRUD de productos.',
-      'Autenticación JWT y roles de usuario.',
+      'Ecommerce full-stack: catálogo con filtros, carrito, pagos y un panel para administrar productos, pedidos y devoluciones.',
+    summary:
+      'Ecommerce full-stack que construí para practicar el flujo completo de una tienda: del catálogo al pago, y del pedido a su gestión en el panel administrativo.',
+    siteUrl: null,
+    siteLabel: null,
+    repoUrl: 'https://github.com/Restt015/Jflowg',
+    stack: ['React', 'Tailwind CSS', 'Node.js', 'Fastify', 'MongoDB', 'Axios'],
+    built: [
+      'Interfaz completa en React y Tailwind CSS',
+      'Catálogo con filtros por categoría y búsqueda',
+      'Carrito con Context API, checkout y pagos',
+      'API REST con Fastify y MongoDB',
+      'Inicio de sesión, registro y perfil con devoluciones',
+      'Panel administrativo de productos, pedidos y usuarios',
     ],
-    stack: ['React', 'Tailwind', 'Fastify', 'MongoDB'],
-    repoUrl: 'https://github.com/Restt015/Jflowg.git',
-    demoUrl: null,
-    detailPath: '/projects/jflowg',
-  },
-
-  // ═══════════════════════════════════════════════════════════════════════════
-  // PROYECTOS QA & TESTING
-  // ═══════════════════════════════════════════════════════════════════════════
-  {
-    id: 'ndc-suite',
-    title: 'NDC QA Suite',
-    subtitle: 'Copa Airlines',
-    description:
-      'Automatización de pruebas para servicios NDC cubriendo reservas, asignaciones, pagos y devoluciones.',
-    longDescription:
-      'Colección avanzada de pruebas manuales y automatizadas para servicios de reserva y revenue management, con pipelines Newman, tableros de resultados y documentación viva.',
-    category: 'qa',
-    featured: false,
-    technologies: ['Postman', 'Newman', 'JavaScript', 'CI/CD', 'REST', 'SOAP'],
-    cover: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80',
+    format: 'small',
+    cover: [jf1],
+    gallery: [
+      { src: jf1, caption: 'Inicio de la tienda.' },
+      { src: jf2, caption: 'Catálogo con filtros por categoría.' },
+      { src: jf3, caption: 'Inicio de sesión.' },
+      { src: jf4, caption: 'Registro de cuenta.' },
+      { src: jf5, caption: 'Carrito de compras.' },
+      { src: jf6, caption: 'Pago del pedido.' },
+      { src: jf7, caption: 'Panel administrativo.' },
+      { src: jf8, caption: 'Gestión de productos.' },
+      { src: jf9, caption: 'Edición de un producto.' },
+      { src: jf10, caption: 'Pedidos y devoluciones.' },
     ],
-    achievements: [
-      'Automatización de regresiones con Postman y Newman.',
-      'Validaciones REST/SOAP y reportes accionables.',
-    ],
-    stack: ['Postman', 'Newman', 'JavaScript', 'REST/SOAP'],
-    repoUrl: null,
-    demoUrl: null,
-    detailPath: null,
   },
   {
-    id: 'banesco-load-lab',
-    title: 'Banesco Load Lab',
-    subtitle: 'Performance Testing',
+    id: 'alarmber',
+    title: 'Alarmber',
+    kind: 'App móvil de alertas por personas desaparecidas',
+    practice: true,
     description:
-      'Pruebas de rendimiento para Banca Persona y Empresa, simulando picos de uso reales con dashboards de insights.',
-    longDescription:
-      'Diseño y ejecución de escenarios complejos con Apache JMeter, integrando métricas en paneles de latencia, throughput y errores críticos.',
-    category: 'qa',
-    featured: false,
-    technologies: ['JMeter', 'Gatling', 'BrowserStack', 'Observabilidad'],
-    cover: 'https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=900&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=900&q=80',
+      'App móvil para reportar personas desaparecidas y seguir las alertas activas, con recursos de emergencia a un toque.',
+    summary:
+      'App móvil para reportar personas desaparecidas y seguir las alertas activas de la zona. La construí para practicar React Native y Expo con un problema real.',
+    siteUrl: 'https://alarmber-app-xkri.vercel.app/',
+    siteLabel: 'Vista web en Vercel',
+    repoUrl: 'https://github.com/Restt015/alarmber-app',
+    stack: ['React Native', 'Expo', 'Expo Router', 'React Native Paper', 'NativeWind'],
+    built: [
+      'Reporte con foto, última ubicación, descripción física y vestimenta',
+      'Listado de alertas activas con búsqueda y estado de cada caso',
+      'Notificaciones de alertas cercanas y del avance de un reporte',
+      'Validación de los reportes por un administrador',
+      'Recursos de ayuda con números de emergencia',
+      'Registro, inicio de sesión y perfil de usuario',
     ],
-    achievements: [
-      'Escenarios de carga y estrés con Apache JMeter.',
-      'Identificación de cuellos de botella y optimización.',
+    format: 'phone',
+    cover: [al1, al2, al8],
+    gallery: [
+      { src: al1, caption: 'Inicio: accesos rápidos y noticias.' },
+      { src: al2, caption: 'Alertas activas, con el estado de cada caso.' },
+      { src: al8, caption: 'Nuevo reporte: foto, datos y última ubicación.' },
+      { src: al3, caption: 'Notificaciones de alertas y reportes.' },
+      { src: al4, caption: 'Recursos de ayuda y números de emergencia.' },
+      { src: al5, caption: 'Perfil y configuración.' },
+      { src: al6, caption: 'Inicio de sesión.' },
+      { src: al7, caption: 'Registro de cuenta.' },
     ],
-    stack: ['Apache JMeter', 'Gatling', 'BrowserStack'],
-    repoUrl: null,
-    demoUrl: null,
-    detailPath: null,
-  },
-  {
-    id: 'infosgroup-dev-support',
-    title: 'InfosGroup Dev Support',
-    subtitle: 'Functional Testing',
-    description:
-      'Estandarización de pruebas funcionales y validaciones UI dentro del programa PFP de InfosGroup.',
-    longDescription:
-      'Documentación de flujos críticos, checklists reutilizables y automatizaciones ligeras con Selenium/TestComplete para acelerar regresiones.',
-    category: 'qa',
-    featured: false,
-    technologies: ['JavaScript', 'Selenium', 'TestComplete', 'Git'],
-    cover: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=900&q=80',
-    images: [
-      'https://images.unsplash.com/photo-1454165205744-3b78555e5572?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=900&q=80',
-    ],
-    achievements: [
-      'Documentación de flujos críticos y checklists.',
-      'Automatizaciones con JavaScript y Selenium.',
-    ],
-    stack: ['JavaScript', 'Selenium', 'TestComplete', 'Git'],
-    repoUrl: null,
-    demoUrl: null,
-    detailPath: null,
   },
 ];
 
-// Helper para obtener proyectos destacados
-export const getFeaturedProjects = () => projects.filter((p) => p.featured);
-
-// Helper para obtener proyectos por categoría
-export const getProjectsByCategory = (category) =>
-  projects.filter((p) => p.category === category);
+export const getProject = (id) => projects.find((p) => p.id === id);
